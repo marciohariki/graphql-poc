@@ -1,0 +1,33 @@
+type Query {
+  users: [User]
+}
+
+type User {
+  id: Int!
+  name: String!
+  username: String!
+  email: String!,
+  address: Adresss
+  phone: String
+  website: String
+  company: Company
+}
+
+type Company {
+  name: String
+  catchPhrase: String
+  bs: String
+}
+
+type Adresss {
+  street: String
+  suite: String
+  city: String,
+  zipcode: String,
+  geo: Coordenates
+}
+
+type Coordenates {
+  lat: String
+  lng: String
+}
